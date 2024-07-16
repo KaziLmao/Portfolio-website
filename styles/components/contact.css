@@ -1,0 +1,127 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.contact__title {
+  font-size: var(--size-2xl);
+  color: var(--clr-light);
+  text-transform: capitalize;
+}
+
+.contact__description {
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
+  max-width: 60ch;
+}
+
+.contact__btn {
+  font-size: var(--size-sm);
+}
+
+.contact__links {
+  display: flex;
+}
+
+.contact__git {
+  margin-right: 1rem;
+}
+
+.contact__git,
+.contact__telegram {
+  background-color: #f5f5f5;
+  width: var(--size-3xl);
+  height: var(--size-3xl);
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(255, 68, 0, 0.5), 0 6px 6px rgba(255, 68, 0, 0.5),
+    0 0 100px -10px var(--clr-orange);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact__git:hover,
+.contact__telegram:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(255, 68, 0, 0.25),
+    0 10px 10px rgba(255, 68, 0, 0.22), 0 0 120px -10px var(--clr-orange);
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .contact {
+    gap: 1.5rem;
+  }
+
+  .contact__title {
+    font-size: var(--size-3xl);
+  }
+
+  .contact__description {
+    font-size: var(--size-base);
+  }
+
+  .contact__btn {
+    font-size: var(--size-base);
+  }
+}
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+  .contact__title {
+    font-size: var(--size-4xl);
+  }
+
+  .contact__description {
+    font-size: var(--size-lg);
+  }
+
+  .contact__btn {
+    font-size: var(--size-lg);
+  }
+
+  .contact__git,
+  .contact__telegram {
+    width: var(--size-4xl);
+    height: var(--size-4xl);
+  }
+}
+
+/* xL */
+@media (min-width: 1280px) {
+  .contact {
+    gap: 2rem;
+  }
+
+  .contact__title {
+    font-size: var(--size-5xl);
+  }
+
+  .contact__description {
+    font-size: var(--size-xl);
+  }
+
+  .contact__btn {
+    font-size: var(--size-xl);
+  }
+
+  .contact__git,
+  .contact__telegram {
+    width: var(--size-5xl);
+    height: var(--size-5xl);
+  }
+}
+
+/* xxL */
+/* @media (min-width: 1536px) {} */
